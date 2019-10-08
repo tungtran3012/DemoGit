@@ -1,0 +1,13 @@
+1. Sau khi getOrder là dong bị xóa trắng luôn hay là nó chuyển sang bảng nào a? Vì đây là api update sao nó lại bị xóa
+2. Để thực hiện chức năng getOrder của DO thông qua API DO update thì có phải cần nhập tất cả các trường trong deliveryOrder(body) của DO update(API) vào doData không a? Nếu có thì các trường này em phải nhập dữ liệu như thế nào?
+3. Sau khi tích vào các ô checkbox thì nó tương ứng với các doIds trong Shipping DHL, vậy em tích vào các ô checkbox thì nó sẽ tương ứng với trường nào của API DO update? 
+4. Các trường trong body có cần phải lấy ra trong phần getList không a?
+5. Trường DOCode trong shipping DHL có phải là DoIds không a?Hay doIds chỉ là các ô checkbox
+
+JS
+	6. Làm thế nào để thêm nội dụng vào ConfirmationBox(hiện tại chỉ thấy tiêu đề)?
+	7. Có phải gọi hàm then là khi đã chọn Yes của ConfirmationBox?
+	8. Hàm app.helper.hideProgress() có tác dụng gì?
+	9. Cần nhập những trường nào vào param 
+	
+10. Tại sao trong doData của Module không gọi $params->get('status') mà truyền luôn 52

@@ -1,0 +1,9 @@
+ajaxproducts.index route này ở đâu
+DT_RowIndex là gì
+create-product để làm gì
+Khong goi ham destroy trong controller ma no van chay vao ?
+
+----->
+Service Container, Dependency injection
+inject: kiểu như gọi, nếu controller muốn lấy dữ liệu từ db, cần thông qua model 
+a dummy implementation: một thể hiện lấy ra tất cả các bản ghi

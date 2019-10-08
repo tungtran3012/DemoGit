@@ -1,0 +1,37 @@
+Config file: 
+	+ Config file trong /etc/apache2/sites-available/tms-ui.conf : Khai báo virtual host ở port nào đó
+	+ /etc/apache2/ports.conf : Listen port ở trên
+	+ /etc/hosts Khai báo đường dẫn trên trình duyệt
+Config db: config.inc.php
+TK http://demo.tmsapp.vn/ : agent01@ekiwi.com pass: user
+new : mới
+approve:chấp nhận 
+call back: gọi lại
+getRowsRefactor($request,'ten API')
+
+Xóa các bản ghi trong bảng vtiger_users
+Tương ứng với các id đã xóa , Vào thư mục user_privileges xóa các file: + sharing_privileges_'id_da_xoa'
+									+ user_privileges_'id_đã_xóa'
+
+1.Bảng header của Shipping DHL được gen từ file nào?(Vì datatable gen thì chỉ gen ra dữ liệu của bảng, còn phần header thì vẫn phải sinh từ thẻ html <table>)
+	1.1 CSS bảng như nào để header không bị lệch so với data
+
+2.Để tạo menu tương tự như ORDERS(appname=BHS_ORDERS) thì cần làm những gì ?
+	2.1. Trace là gì? Tìm kiếm
+	2.2. Biến appmodule trong file template hay trong file php? Tpl
+	2.3. getAppMenuList() trong modules/Vtiger/models/MenuStructure.php có phải chỗ để thêm app? YES
+--> Them appname vao ham getAppMenuList() trong /var/www/html/tms-ui/modules/Vtiger/models/MenuStructure.php
+Ham tren duoc goi trong /var/www/html/tms-ui/layouts/v7/modules/Vtiger/partials/SidebarAppMenu.tpl
+Menu to co appname phai duoc dinh nghia trong bang vtiger_app2tab trong db 
+
+3. Để thực hiện btn Get Order trong shipping DHL:
+	-params trong layouts/v7/modules/BhsDoGetList/resources/List.js phải có:
+		+ module: app.getModuleName(),
+                    action: "ActionAjax",
+                    mode: Hàm trong ActionAjax put(update) dl lên api,
+		+ Tất có các field trong body của API, xem trên http://222.252.25.238:9002/api/v1/swagger-ui.html#/
+
+********GIT***********
+git add languages/vi_vn/Vtiger.php languages/vi_vn/BhsOrderProcessing.php languages/vi_vn/BhsOrders.php languages/vi_vn/Home.php languages/vi_vn/BhsValidation.php languages/vi_vn/Vtiger.php languages/vi_vn/BhsOrderProcessing.php languages/vi_vn/BhsOrders.php languages/vi_vn/Home.php languages/vi_vn/BhsValidation.php languages/en_us/BhsOrderProcessing.php languages/en_us/BhsOrders.php layouts/v7/modules/BhsOrderProcessing/EditView.tpl layouts/v7/modules/BhsOrderProcessing/AddNewOrder.tpl layouts/v7/modules/BhsOrders/CreateLead.tpl
+
+	
